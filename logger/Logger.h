@@ -31,13 +31,14 @@ from player 1 have 6 column, which
 
 ex
 Player 0,,,,,,pair,Player 1,,,,,pair,Player 2,,,,,pair,Player 3,,,,,pair,Player 4,,,,,pair,
-a,b,c,d,e,f,0,a,b,c,d,e,0,a,b,c,d,e,0,a,b,c,d,e,0,a,b,a,d,e,1,
+1a,2b,3c,4d,5e,6f,0,1a,2b,1c,4d,5e,1,1a,2b,3c,4d,5e,0,1a,2b,3c,4d,5e,0,1a,2b,3a,4d,5e,0,
+
 
 from the data above
-player 0 have 6 card which is a,b,c,d,e,f 
+player 0 have 6 card which is 1a,2b,3c,4d,5e,6f
 player 0 will have 0 pair
-player 4 have a b a d e
-player 4 have 1 pair
+player 1 have 1a,2b,1c,4d,5e
+player 1 have 1 pair
 
 */
 

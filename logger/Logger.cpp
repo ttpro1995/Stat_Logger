@@ -86,7 +86,8 @@ int Logger::CardPair(string hand[6], int num_of_card)
 	for (int i = 0; i < num_of_card; i++)
 		for (int j = i + 1; j < num_of_card; j++)
 		{
-			if (hand[i] == hand[j]) pair++;
+			if (hand[i][0] == hand[j][0]) 
+				pair++;  //if it is pair (3S and 3D is a pair)
 		}
 	return pair;
 	

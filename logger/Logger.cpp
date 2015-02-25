@@ -63,8 +63,9 @@ void Logger::CardLog(string player[10][6])
 	{
 		cardfout << player[0][i];
 		cardfout << ",";
-		cardfout << CardPair(player[i], 6) << ",";
+		
 	}
+	cardfout << CardPair(player[0], 6) << ",";
 
 	for (int i = 1; i < num_of_player; i++)//from player 1
 	{

@@ -3,7 +3,6 @@
 using namespace std;
 
 /*
-
 Log winner 
 output: A csv file name winlog0.csv, winlog1.csv ...
 Column name is number of player, from player 0 to num_of_player -1
@@ -15,8 +14,30 @@ Player 0,Player 1,Player 2,Player 3,Player 4
 0,0,0,1,0
 0,0,1,0,0
 
-
 player 3 win first match then player 2 win second match
+*/
+/*
+Log pair
+input: a string array of player hand
+player[10][6]
+output: A csv file
+player 0: 7 column, which 
+		6 column are card on his hand
+		7th column is number of pair he have
+
+from player 1 have 6 column, which 
+			5 column are card on his hand
+			6th column is number of pair he have
+
+ex
+Player 0,,,,,,pair,Player 1,,,,,pair,Player 2,,,,,pair,Player 3,,,,,pair,Player 4,,,,,pair,
+a,b,c,d,e,f,0,a,b,c,d,e,0,a,b,c,d,e,0,a,b,c,d,e,0,a,b,a,d,e,1,
+
+from the data above
+player 0 have 6 card which is a,b,c,d,e,f 
+player 0 will have 0 pair
+player 4 have a b a d e
+player 4 have 1 pair
 
 */
 
@@ -40,14 +61,17 @@ private:
 public:
 	//num_of_player is number of player
 	//log_num is name of log. 
-	//ex: log_num=1, log will name log1.csv
+	//ex: log_num=1, log will name winlog1.csv and cardlog1.csv
 	Logger(int num_of_player,int log_num);
 
 	~Logger();
 
-	void MarkWinner(int winner);//
+	//winlog
+	//input: position of winner, from 0 
+	void MarkWinner(int winner);
 
-	//input : string player [10][6] in project
+	//cardlog
+	//input : string player [10][6]
 	void CardLog(string player[10][6]);
 
 };

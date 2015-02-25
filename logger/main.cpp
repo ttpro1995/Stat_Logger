@@ -40,7 +40,7 @@ int main()
 
 	player[4][0] = "a";
 	player[4][1] = "b";
-	player[4][2] = "c";
+	player[4][2] = "a";
 	player[4][3] = "d";
 	player[4][4] = "e";
 

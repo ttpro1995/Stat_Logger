@@ -34,7 +34,7 @@ private:
 	ofstream cardfout;
 	void init_card();
 	string cardlogname;
-
+	int CardPair(string hand[6], int num_of_card);//player 0 have 6 card, else 5 card
 
 	int num_of_player;
 public:

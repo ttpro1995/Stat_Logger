@@ -85,6 +85,7 @@
     <ClInclude Include="Logger.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cardlog0.csv" />
     <None Include="log0.csv" />
     <None Include="winlog0.csv" />
   </ItemGroup>

@@ -23,9 +23,17 @@ player 3 win first match then player 2 win second match
 class Logger
 {
 private:
+	string log_num;
+
 	//log winner for each round
 	ofstream winfout;
 	string winlogname;
+	void init_win();
+
+	//log card of each player each round
+	ofstream cardfout;
+	void init_card();
+	string cardlogname;
 
 
 	int num_of_player;
@@ -39,6 +47,8 @@ public:
 
 	void MarkWinner(int winner);//
 
+	//input : string player [10][6] in project
+	void CardLog(string player[10][6]);
 
 };
 

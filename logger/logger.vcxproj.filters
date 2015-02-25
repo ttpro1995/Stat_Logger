@@ -34,5 +34,8 @@
     <None Include="winlog0.csv">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="cardlog0.csv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

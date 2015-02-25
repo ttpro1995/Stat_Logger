@@ -40,15 +40,10 @@ int main()
 
 	player[4][0] = "1a";
 	player[4][1] = "2b";
-	player[4][2] = "3a";
-	player[4][3] = "4d";
+	player[4][2] = "1a";
+	player[4][3] = "1d";
 	player[4][4] = "5e";
 
-	player[5][0] = "1a";
-	player[5][1] = "2b";
-	player[5][2] = "3c";
-	player[5][3] = "4d";
-	player[5][4] = "5e";
 
 	log.CardLog(player);//log
 }

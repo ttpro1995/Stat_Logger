@@ -50,5 +50,5 @@ int main()
 	player[5][3] = "d";
 	player[5][4] = "e";
 
-	log.CardLog(player);
+	log.CardLog(player);//log
 }
